@@ -3,9 +3,8 @@ import { ppEditorialNewUltralightItalic, inter } from "./fonts"
 import type React from "react"
 
 export const metadata = {
-  title: "Dynamic Frame Layout",
-  description: "A dynamic frame layout with custom fonts",
-    generator: 'v0.dev'
+  title: "BrandGen",
+  description: " "
 }
 
 export default function RootLayout({
