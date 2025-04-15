@@ -5,6 +5,7 @@ import DynamicFrameLayout from "../components/DynamicFrameLayout"
 import { ppEditorialNewUltralightItalic, inter } from "./fonts"
 import Image from "next/image"
 import Link from "next/link"
+import { logoImage } from "./assets"
 
 export default function Home() {
   const [headerSize] = useState(1.2) // 120% is the default size
@@ -12,14 +13,14 @@ export default function Home() {
 
   return (
     <div
-      className={`min-h-screen bg-[#141414] flex items-center justify-center p-8 ${ppEditorialNewUltralightItalic.variable} ${inter.variable}`}
+      className={`min-h-screen bg-[#FAF9F6] flex items-center justify-center p-8 ${ppEditorialNewUltralightItalic.variable} ${inter.variable}`}
     >
       <div className="w-full h-full flex flex-col md:flex-row items-start gap-8 md:gap-8">
         {/* Left Content */}
         <div className="w-full md:w-[260px] flex-shrink-0 flex flex-col justify-between h-full">
           <div className="flex flex-col gap-10">
             <h1
-              className={`${ppEditorialNewUltralightItalic.className} text-4xl md:text-6xl font-light italic text-white/80 tracking-tighter leading-[130%]`}
+              className={`${ppEditorialNewUltralightItalic.className} text-4xl md:text-6xl font-light italic text-black/80 tracking-tighter leading-[130%]`}
               style={{ fontSize: `${4 * headerSize}rem` }}
             >
               Brand
@@ -28,11 +29,11 @@ export default function Home() {
               <br />
             </h1>
             <div
-              className={`${inter.className} flex flex-col gap-12 text-white/50 text-sm font-light max-w-[300px]`}
+              className={`${inter.className} flex flex-col gap-12 text-black/50 text-sm font-light max-w-[300px]`}
               style={{ fontSize: `${0.875 * textSize}rem` }}
             >
               <div className="space-y-6">
-                <div className="h-px bg-white/10 w-full" />
+                <div className="h-px bg-[#f1573d]/50 w-full" />
                 <p>
                  
                 </p>
@@ -40,7 +41,7 @@ export default function Home() {
                   
                 </p>
                 <p></p>
-                <div className="h-px bg-white/10 w-full" />
+                <div className="h-px bg-[#f1573d]/50 w-full" />
               </div>
             </div>
             <Link
@@ -50,7 +51,7 @@ export default function Home() {
               className="w-8 h-8 relative opacity-80 hover:opacity-100 transition-opacity"
             >
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/LumaLogo%201-MA3upjPymxFHKoHJgpdAUfZMeKGq3i.png"
+                src={logoImage}
                 alt="Luma Logo"
                 fill
                 className="object-contain"
@@ -59,7 +60,7 @@ export default function Home() {
           </div>
           {/* <a
             href="https://lumalabs.ai/join?role=5d274587-f8fd-4f53-a5b6-8f85d586e1aa"
-            className="inline-block px-6 py-3 text-white/70 border border-white/20 rounded-full font-medium hover:bg-white/5 transition-colors text-center w-full max-w-[260px] text-sm mt-16"
+            className="inline-block px-6 py-3 text-black/70 border border-black/20 rounded-full font-medium hover:bg-black/5 transition-colors text-center w-full max-w-[260px] text-sm mt-16"
             target="_blank"
             rel="noopener noreferrer"
           >

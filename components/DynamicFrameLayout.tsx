@@ -205,7 +205,7 @@ export default function DynamicFrameLayout() {
   return (
     <div className="space-y-4 w-full h-full">
       <div className="flex justify-between items-center mb-4">
-        <div className="flex items-center space-x-4">
+        {/* <div className="flex items-center space-x-4">
           <div className="flex items-center space-x-2">
             <Switch id="frame-toggle" checked={showFrames} onCheckedChange={setShowFrames} />
             <label htmlFor="frame-toggle" className="text-sm text-white/70">
@@ -222,7 +222,7 @@ export default function DynamicFrameLayout() {
               {autoplayMode === "all" ? "Autoplay All" : "Hover Autoplay"}
             </label>
           </div>
-        </div>
+        </div> */}
       </div>
       {!cleanInterface && (
         <div className="flex justify-between items-center">
